@@ -25,21 +25,22 @@
     background-color: lightgray;
     display: flex;
     justify-content: space-between;
-    padding: 0 10px;
+    padding: 10px 10px;
     border-radius: 10px;
 }
 
-.break-container p {
-    font-size: 18px;
+.break-container button {
+
     background-color: white;
     height: 40px;
     width: 40px;
+    border: none;
     border-radius: 20px;
     text-align: center;
 
 }
 
-.break-container p:hover {
+.break-container button:hover {
     background-color: blue;
 }
 

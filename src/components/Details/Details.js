@@ -1,14 +1,18 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './Details.css'
 
 const Details = ({ details }) => {
+
     // console.log(details)
+
 
     let time = 0;
     for (const activity of details) {
         time = time + activity.time
 
     }
+
+
     return (
         <div className='details'>
             <div>
@@ -31,10 +35,10 @@ const Details = ({ details }) => {
             </div>
             <h3>Add A Break</h3>
             <div className='break-container'>
-                <p>2m</p>
-                <p>5m</p>
-                <p>7m</p>
-                <p>10m</p>
+                <button>2m</button>
+                <button>5m</button>
+                <button>7m</button>
+                <button>10m</button>
             </div>
 
             <div className='time-container'>
