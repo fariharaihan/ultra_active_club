@@ -1,10 +1,16 @@
 import React, { useState } from 'react';
 import './Details.css'
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 const Details = ({ details }) => {
+    const [breakTime, setBreakTime] = useState([0])
+    const handeBrake = (second) => {
+        setBreakTime(second)
+        console.log('boom')
+    }
 
     // console.log(details)
-
 
     let time = 0;
     for (const activity of details) {
@@ -12,6 +18,12 @@ const Details = ({ details }) => {
 
     }
 
+    const notify = () => {
+        toast("All process are complete", {
+            position: "top-center"
+        })
+
+    }
 
     return (
         <div className='details'>
@@ -35,10 +47,10 @@ const Details = ({ details }) => {
             </div>
             <h3>Add A Break</h3>
             <div className='break-container'>
-                <button>2m</button>
-                <button>5m</button>
-                <button>7m</button>
-                <button>10m</button>
+                <button onClick={handeBrake}>2m</button>
+                <button onClick={handeBrake}>5m</button>
+                <button onClick={handeBrake}>7m</button>
+                <button onClick={handeBrake}>10m</button>
             </div>
 
             <div className='time-container'>
@@ -46,11 +58,14 @@ const Details = ({ details }) => {
                 <p>Exercise time:  {time}m</p>
                 <p>Break time: { }</p>
             </div>
-            <button className='btn-activity'>
+            <button onClick={notify} className='btn-activity'>
                 <p>Activity Completed</p>
             </button>
+            <ToastContainer />
+
             {/* <p>selected: {details.length}</p> */}
         </div>
+
     );
 };
 
