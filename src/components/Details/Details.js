@@ -5,9 +5,9 @@ import 'react-toastify/dist/ReactToastify.css';
 
 const Details = ({ details }) => {
     // console.log(details)
-    const [breakTime, setBreakTime] = useState([0])
+    const [breakTime, setBreakTime] = useState([0]);
     const handeBrake = (second) => {
-        setBreakTime(second)
+        setBreakTime(second);
     }
 
     let time = 0;
@@ -18,7 +18,7 @@ const Details = ({ details }) => {
     const notify = () => {
         toast("All process are complete", {
             position: "top-center"
-        })
+        });
     }
 
     return (

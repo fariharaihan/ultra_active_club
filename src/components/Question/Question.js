@@ -18,7 +18,7 @@ const Question = () => {
 
 
             <h2>Question No: 3</h2>
-            <h4>Where does useEffect use excpet use API to load data?</h4>
+            <h4>What is the usage of useEffect other then API load data?</h4>
             <h4>Answer:</h4>
             <p>By using this Hook, We tell React that your component needs to do something after render. React will remember the function you passed (we'll refer to it as our “effect”), and call it later after performing the DOM updates.</p>
 

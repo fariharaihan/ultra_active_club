@@ -6,7 +6,7 @@ import './Club.css';
 
 const Club = () => {
     const [activities, setActivities] = useState([]);
-    const [details, setDetails] = useState([])
+    const [details, setDetails] = useState([]);
 
     useEffect(() => {
         fetch('data.json')
