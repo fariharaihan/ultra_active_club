@@ -9,3 +9,7 @@
     row-gap: 40px;
     margin: 100px 50px;
 }
+
+.exercise-details-container {
+    background-color: skyblue;
+}
