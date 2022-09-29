@@ -3,6 +3,7 @@
     height: 510px;
     border: 1px solid black;
     border-radius: 8px;
+    position: relative;
 
 }
 
@@ -23,4 +24,22 @@
     font-weight: 600;
     font-size: 25px;
     line-height: 25px;
+}
+
+.btn-list {
+    width: 100%;
+    background-color: rgb(106, 106, 220);
+    border: none;
+    border-radius: 0px 0px 8px 8px;
+    position: absolute;
+    bottom: 0;
+}
+
+.btn-list p {
+    font-weight: 200;
+    font-size: 17px;
+}
+
+.btn-list:hover {
+    background-color: blue;
 }
