@@ -14,7 +14,7 @@ const Club = () => {
     }, [])
 
     const handleAddToList = (activity) => {
-        console.log(activity)
+        // console.log(activity)
         const newDetails = [...details, activity];
         setDetails(newDetails);
 
