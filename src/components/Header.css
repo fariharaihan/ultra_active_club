@@ -1,0 +1,15 @@
+.header {
+    display: flex;
+    height: 80px;
+    color: whitesmoke;
+    background-color: black;
+    padding-left: 120px;
+
+}
+
+.header-text {
+    font-weight: bold;
+    font-size: 30px;
+    margin-bottom: 20px;
+
+}
