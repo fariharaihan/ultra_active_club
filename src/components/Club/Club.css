@@ -13,3 +13,27 @@
 .exercise-details-container {
     background-color: skyblue;
 }
+
+@media only screen and (max-width: 688px) {
+    .club-container {
+        display: block;
+
+    }
+
+    .exercise-container {
+        display: block;
+
+    }
+}
+
+@media only screen and (min-width: 689px) and (max-width: 992px) {
+    .club-container {
+        display: block;
+    }
+
+    .exercise-container {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        column-gap: 30px;
+    }
+}
