@@ -1,0 +1,26 @@
+.activity {
+    width: 300px;
+    height: 510px;
+    border: 1px solid black;
+    border-radius: 8px;
+
+}
+
+.activity img {
+    width: 290px;
+    height: 285px;
+    border-radius: 8px;
+    margin: 5px;
+}
+
+.activity-info {
+    text-align: center;
+}
+
+.activity-name {
+    font-family: "Lato";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 25px;
+    line-height: 25px;
+}
