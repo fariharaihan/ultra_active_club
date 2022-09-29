@@ -12,6 +12,10 @@
     border-radius: 10px;
 }
 
+.client-name {
+    margin-bottom: 0;
+}
+
 .client-info p {
     margin: 0;
 }
@@ -41,7 +45,7 @@
 }
 
 .break-container button:hover {
-    background-color: blue;
+    background-color: skyblue;
 }
 
 .time-container p {

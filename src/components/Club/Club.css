@@ -14,6 +14,8 @@
     background-color: skyblue;
 }
 
+/***  media Query for mobile device ***/
+
 @media only screen and (max-width: 688px) {
     .club-container {
         display: block;
@@ -25,6 +27,8 @@
 
     }
 }
+
+/***  media Query for tablet device ***/
 
 @media only screen and (min-width: 689px) and (max-width: 992px) {
     .club-container {
